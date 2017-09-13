@@ -20,8 +20,8 @@ const LyricType = new GraphQLObjectType({
       resolve(parentValue) {
         return Lyric.findById(parentValue).populate('song')
           .then(lyric => {
-            console.log(lyric)
-            return lyric.song
+            console.log(lyric);
+            return lyric.song;
           });
       }
     }

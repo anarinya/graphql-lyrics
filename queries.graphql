@@ -1,0 +1,27 @@
+# add song
+mutation {
+  addSong(title: "Cold Night") {
+    id
+  }
+}
+
+# add lyric
+mutation {
+  addLyricToSong(
+    songId: "59b5c1200ec605cc43ae490a", 
+    content: "Oh my oh my it's a cold night"
+  ) {
+    id
+  }
+}
+
+# grab data
+query {
+  songs {
+    id
+    title
+    lyrics {
+      content
+    }
+  }
+}
