@@ -1,2 +1,2 @@
-# Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+### Overview
+This is a simple lyrics application using react, apollo, express, and graphql.
